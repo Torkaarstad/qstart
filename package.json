@@ -6,10 +6,10 @@
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
     "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 ng2-quickstart",
-    "e2e": "tsc && concurrently \"http-server\" \"protractor protractor.config.js",
+    "e2e": "tsc && concurrently \"http-server\" \"protractor protractor.config.js\"",
     "lite": "lite-server",
     "postinstall": "typings install",
-    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -17,7 +17,7 @@
     "build": "tsc && gulp",
     "prod": "npm run build && cd build && npm i && node index.js"
   },
-  "keywords": [ ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -44,10 +44,10 @@
     "protractor": "^3.2.2",
     "rimraf": "^2.5.2",
     "typescript": "^1.8.10",
-    "typings": "^0.7.12",
-    "gulp": "3.9.1",
+    "typings":"^0.7.12",
+    "gulp" : "3.9.1",
     "gulp-sourcemaps": "2.0.0-alpha",
-    "del": "2.2.0"
+    "del" : "2.2.0"
   },
-  "repository": { }
+  "repository": {  }
 }
